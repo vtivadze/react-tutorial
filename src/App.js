@@ -38,7 +38,7 @@ class App extends Component {
 
         return (
             <div className="container">
-                <Table characterData={characters} />
+                <Table characterData={characters} removeCharacter={this.removeCharacter} />
             </div>
         );
     }
