@@ -4,8 +4,8 @@ import Table from './Table';
 class App extends Component {
     render() {
         return (
-            <div className="App">
-                <h1>Hello, Rreact!</h1>
+            <div className="container">
+                <Table />
             </div>
         );
     }
