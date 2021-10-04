@@ -5,4 +5,6 @@ class Form extends Component {
         name: '',
         job: '',
     }
+
+    state = this.initialState;
 }
