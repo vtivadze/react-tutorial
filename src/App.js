@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import Table from './Table';
 
 class App extends Component {
-    state = {};
+    state = {
+        characters: [],
+    };
 
     render() {
         const characters = [
