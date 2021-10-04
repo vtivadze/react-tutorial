@@ -26,17 +26,15 @@ const TableBody = (props) => {
     );
 }
 
-class Table extends Component {
-    render() {
-        const {characterData} = this.props;
+const Table = (props) => {
+    const {characterData, removeCharacter} = this.props;
 
-        return (
-            <table>
-                <TableHeader />
-                <TableBody characterData={characterData} />
-            </table>
-        );
-    }
+    return (
+        <table>
+            <TableHeader />
+            <TableBody characterData={characterData} removeCharacter={removeCharacter} />
+        </table>
+    );
 }
 
 export default Table;
