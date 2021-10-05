@@ -7,6 +7,21 @@ class App extends Component {
         characters: [],
     };
 
+    componentDidMount() {
+        const url = 'https://jsonplaceholder.typicode.com/users';
+
+        fetch(url)
+            .then((result) => result.json())
+            .then((result) => {
+                this.setState({
+                    characters: result.map(user => ({
+                        name: user.name,
+                        job: user.company.bs,
+                    }))
+                })
+            })
+    }
+
     removeCharacter = (index) => {
         const {characters} = this.state;
 
